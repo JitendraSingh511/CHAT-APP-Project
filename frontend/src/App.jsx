@@ -34,20 +34,8 @@ useEffect(() => {
         reconnectionDelayMax: 5000
     });
 
-    socketio.on("connect", () => {
-        console.log("SOCKET CONNECTED:", socketio.id);
-    });
-
     socketio.on("getOnlineUsers", (users) => {
         dispatch(setOnlineUsers(users));
-    });
-
-    socketio.on("disconnect", (reason) => {
-        console.log("SOCKET DISCONNECTED:", reason);
-    });
-
-    socketio.on("connect_error", (error) => {
-        console.log("SOCKET ERROR:", error.message);
     });
 
     dispatch(setSocket(socketio));
