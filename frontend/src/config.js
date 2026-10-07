@@ -1,1 +1,1 @@
-export const serverUrl = "https://chat-app-project-svj7.onrender.com"
+export const serverUrl = "https://chat-app-project-1-1556.onrender.com"
