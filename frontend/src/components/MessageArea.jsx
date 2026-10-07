@@ -7,7 +7,7 @@ import { BsEmojiSmile } from "react-icons/bs";
 import { BsCardImage } from "react-icons/bs";
 import { LuSendHorizontal } from "react-icons/lu";
 import EmojiPicker from 'emoji-picker-react';
-import SenderMessage from "./senderMessage";
+import SenderMessage from "./SenderMessage";
 import ReceiverMessage from "./ReceiverMessage";
 import axios from "axios";
 import { serverUrl } from "../config";
